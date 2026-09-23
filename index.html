@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Game Settings Panel</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="settings-card">
+      <h1>Game Settings</h1>
+      <p class="subtitle">Customize your gaming experience</p>
+
+      <div class="settings-list">
+        <label class="setting">
+          <span class="setting-info">
+            <strong>🔊 Sound Effects</strong>
+            <small>Play sounds during gameplay</small>
+          </span>
+
+          <input type="checkbox" id="soundEffects" />
+        </label>
+
+        <label class="setting">
+          <span class="setting-info">
+            <strong>🎵 Background Music</strong>
+            <small>Play music while you play</small>
+          </span>
+
+          <input type="checkbox" id="backgroundMusic" />
+        </label>
+
+        <label class="setting">
+          <span class="setting-info">
+            <strong>🔥 Hard Mode</strong>
+            <small>Increase the game difficulty</small>
+          </span>
+
+          <input type="checkbox" id="hardMode" />
+        </label>
+
+        <label class="setting">
+          <span class="setting-info">
+            <strong>📳 Haptic Feedback</strong>
+            <small>Vibrate when certain actions happen</small>
+          </span>
+
+          <input type="checkbox" id="hapticFeedback" />
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="saveButton">Save Settings</button>
+        <button id="resetButton" class="reset-button">Reset</button>
+      </div>
+
+      <p id="message"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
